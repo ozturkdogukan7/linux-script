@@ -1,27 +1,22 @@
-# Geçici dosyalar
 *.log
 *.tmp
 *.swp
 *.bak
 
-# Gizli dosyalar ve anahtarlar
 *.env
 *.key
 *.pem
 *.crt
 *.json
 
-# SSH, API, yapılandırma dosyaları
 id_rsa
 id_rsa.pub
 config
 token.txt
 secrets.txt
 
-# VSCode, IDE, sistem dosyaları
 .vscode/
 .idea/
 *.DS_Store
 
-# Linux işletim sistemi için oluşturulabilecek bazı geçici dosyalar
 *~
