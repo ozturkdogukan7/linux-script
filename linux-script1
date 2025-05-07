@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Proje klasörü oluşturuluyor
+mkdir -p ~/proje1
+cd ~/proje1 || exit
+
+# Dosyalar oluşturuluyor
+touch not1.txt not2.txt not3.txt
+
+# İçerik ekleniyor
+echo "Bu birinci nottur." > not1.txt
+echo "Bu ikinci nottur." > not2.txt
+echo "Bu üçüncü nottur." > not3.txt
+
+# Dosyalar görüntüleniyor
+cat not1.txt
+cat not2.txt
+cat not3.txt
+
+# Dosya izinleri kontrolü ve değiştirme
+ls -l
+chmod 750 not3.txt
+ls -l not3.txt
+
+# Man sayfasında arama
+echo "Man sayfasında arama yapılabilir: (manuel açılır)"
+echo "Örnek: man chmod ve ardından /permission"
+
+# which ile komut yolları
+echo "Komutların yolları:"
+which ls
+which echo
+which man
+
+# Ağaç görünümü (tree)
+echo "Ağaç görünümü:"
+tree -C .
+
